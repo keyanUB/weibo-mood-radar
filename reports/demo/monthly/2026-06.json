@@ -1,0 +1,94 @@
+{
+  "period": "month",
+  "period_id": "2026-06",
+  "start_at": "2026-06-01T00:00:00+08:00",
+  "end_at": "2026-07-01T00:00:00+08:00",
+  "as_of": "2026-06-08",
+  "is_demo": true,
+  "status": "in_progress",
+  "coverage": {
+    "observed_days": 3,
+    "expected_days": 30,
+    "missing_dates": [
+      "2026-06-01",
+      "2026-06-03",
+      "2026-06-05",
+      "2026-06-06"
+    ],
+    "post_samples": 5,
+    "post_target": 900,
+    "comment_samples": 14,
+    "comment_target": 90000
+  },
+  "post_count": 3,
+  "comment_count": 8,
+  "scores": {
+    "joy": 20.57,
+    "anger": 17.69,
+    "sadness": 0.0,
+    "anxiety": 28.79,
+    "disgust": 2.61,
+    "surprise": 11.27,
+    "neutral": 19.07
+  },
+  "events": [
+    {
+      "title": "高温天气下的考点保障（虚构）",
+      "summary": "多地发布高温提醒，高考考点将增加降温和饮水保障，很多家长表示终于放心一点。",
+      "summary_method": "source_excerpt",
+      "post_count": 1,
+      "comment_count": 3,
+      "best_rank": 1,
+      "dominant_emotion": "anxiety",
+      "scores": {
+        "joy": 29.95,
+        "anger": 14.06,
+        "sadness": 0.0,
+        "anxiety": 35.56,
+        "disgust": 0.0,
+        "surprise": 0.0,
+        "neutral": 20.43
+      },
+      "source_urls": []
+    },
+    {
+      "title": "AI 应用隐私设置引发讨论（虚构）",
+      "summary": "某热门 AI 应用被曝默认开启数据训练选项，引发用户对隐私风险的讨论。",
+      "summary_method": "source_excerpt",
+      "post_count": 1,
+      "comment_count": 3,
+      "best_rank": 2,
+      "dominant_emotion": "anger",
+      "scores": {
+        "joy": 0.0,
+        "anger": 31.56,
+        "sadness": 0.0,
+        "anxiety": 20.5,
+        "disgust": 6.59,
+        "surprise": 28.5,
+        "neutral": 12.85
+      },
+      "source_urls": []
+    },
+    {
+      "title": "新地铁线路开通（虚构）",
+      "summary": "新地铁线路开通首日客流平稳，不少通勤族称节省了半小时。",
+      "summary_method": "source_excerpt",
+      "post_count": 1,
+      "comment_count": 2,
+      "best_rank": 3,
+      "dominant_emotion": "joy",
+      "scores": {
+        "joy": 40.49,
+        "anger": 0.0,
+        "sadness": 0.0,
+        "anxiety": 32.07,
+        "disgust": 0.0,
+        "surprise": 0.0,
+        "neutral": 27.43
+      },
+      "source_urls": []
+    }
+  ],
+  "model": "lexicon-v1 (uncalibrated baseline)"
+}

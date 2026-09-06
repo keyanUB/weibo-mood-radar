@@ -1,0 +1,38 @@
+{
+  "period": "month",
+  "period_id": "2026-09",
+  "start_at": "2026-09-01T00:00:00+08:00",
+  "end_at": "2026-10-01T00:00:00+08:00",
+  "as_of": "2026-09-07",
+  "is_demo": false,
+  "status": "no_data",
+  "coverage": {
+    "observed_days": 0,
+    "expected_days": 30,
+    "missing_dates": [
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06"
+    ],
+    "post_samples": 0,
+    "post_target": 900,
+    "comment_samples": 0,
+    "comment_target": 90000
+  },
+  "post_count": 0,
+  "comment_count": 0,
+  "scores": {
+    "joy": 0.0,
+    "anger": 0.0,
+    "sadness": 0.0,
+    "anxiety": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0,
+    "neutral": 0.0
+  },
+  "events": [],
+  "model": "lexicon-v1 (uncalibrated baseline)"
+}

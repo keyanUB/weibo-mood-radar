@@ -1,0 +1,50 @@
+name: Update weekly and monthly reports
+
+on:
+  schedule:
+    # Monday 09:17 China Standard Time: publish the completed week.
+    - cron: "17 1 * * 1"
+    # First day of month 09:37 China Standard Time: close previous month.
+    - cron: "37 1 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-reports
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: src
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Test before publishing
+        run: python -m unittest discover -s tests -q
+      - name: Update reports or show missing-data status
+        env:
+          DATA_SOURCE_URL: ${{ secrets.DATA_SOURCE_URL }}
+          DATA_SOURCE_TOKEN: ${{ secrets.DATA_SOURCE_TOKEN }}
+        run: python -m weibo_mood_radar.automation
+      - name: Commit generated reports only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md reports/
+          if git diff --cached --quiet; then
+            echo "Reports are unchanged."
+            exit 0
+          fi
+          git commit -m "docs: update weekly and monthly emotion reports"
+          git push

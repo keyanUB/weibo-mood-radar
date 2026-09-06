@@ -1,0 +1,57 @@
+{
+  "period": "week",
+  "period_id": "2026-W22",
+  "start_at": "2026-05-25T00:00:00+08:00",
+  "end_at": "2026-06-01T00:00:00+08:00",
+  "as_of": "2026-06-08",
+  "is_demo": true,
+  "status": "partial",
+  "coverage": {
+    "observed_days": 2,
+    "expected_days": 7,
+    "missing_dates": [
+      "2026-05-25",
+      "2026-05-27",
+      "2026-05-28",
+      "2026-05-29",
+      "2026-05-30"
+    ],
+    "post_samples": 2,
+    "post_target": 210,
+    "comment_samples": 4,
+    "comment_target": 21000
+  },
+  "post_count": 1,
+  "comment_count": 2,
+  "scores": {
+    "joy": 40.49,
+    "anger": 0.0,
+    "sadness": 0.0,
+    "anxiety": 32.07,
+    "disgust": 0.0,
+    "surprise": 0.0,
+    "neutral": 27.43
+  },
+  "events": [
+    {
+      "title": "新地铁线路开通（虚构）",
+      "summary": "新地铁线路开通首日客流平稳，不少通勤族称节省了半小时。",
+      "summary_method": "source_excerpt",
+      "post_count": 1,
+      "comment_count": 2,
+      "best_rank": 3,
+      "dominant_emotion": "joy",
+      "scores": {
+        "joy": 40.49,
+        "anger": 0.0,
+        "sadness": 0.0,
+        "anxiety": 32.07,
+        "disgust": 0.0,
+        "surprise": 0.0,
+        "neutral": 27.43
+      },
+      "source_urls": []
+    }
+  ],
+  "model": "lexicon-v1 (uncalibrated baseline)"
+}
