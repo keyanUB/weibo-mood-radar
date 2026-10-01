@@ -8,6 +8,7 @@
 | 周报 | 2026-W38 | 待采样 | 暂无数据 | 0/7 | 0 | [阅读](weekly/2026-W38.md) · [JSON](weekly/2026-W38.json) |
 | 周报 | 2026-W37 | 待采样 | 暂无数据 | 0/7 | 0 | [阅读](weekly/2026-W37.md) · [JSON](weekly/2026-W37.json) |
 | 周报 | 2026-W36 | 待采样 | 暂无数据 | 0/7 | 0 | [阅读](weekly/2026-W36.md) · [JSON](weekly/2026-W36.json) |
+| 月报 | 2026-10 | 待采样 | 暂无数据 | 0/31 | 0 | [阅读](monthly/2026-10.md) · [JSON](monthly/2026-10.json) |
 | 月报 | 2026-09 | 待采样 | 暂无数据 | 0/30 | 0 | [阅读](monthly/2026-09.md) · [JSON](monthly/2026-09.json) |
 | 月报 | 2026-08 | 待采样 | 暂无数据 | 0/31 | 0 | [阅读](monthly/2026-08.md) · [JSON](monthly/2026-08.json) |
 | 周报 | 2026-W23 | 演示 | 样本不完整 | 3/7 | 8 | [阅读](demo/weekly/2026-W23.md) · [JSON](demo/weekly/2026-W23.json) |
